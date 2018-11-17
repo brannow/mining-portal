@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    {@base_style}
+    <title>{@title}</title>
+</head>
+<body>
+<div class="top-menu-bar menu">
+    <div class="top-menu top-menu-left">
+        <ul>
+            <li>
+                <span class="arrow top-menu-item">{@title}</span>
+            </li>
+        </ul>
+    </div>
+    <div class="top-menu top-menu-right">
+        <ul>
+            <li>
+                <a class="top-menu-item" href="/user">{@username}</a>
+            </li>
+            <li>
+                <a class="top-menu-item" href="/logout">Logout</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="left-menu-bar menu">
+    <div class="link-no-hover" style="text-align: center; margin: 10px 0;">
+        <a href="/" style="display: block;">
+            <img style="display:inline-block" height="35px" src="/Resources/img/logo.png" />
+            <span style="display:inline-block; color: #cccccc; font-weight: bold">Fuyukai <br /> Mining</span>
+        </a>
+    </div>
+
+    <div class="main-menu active-{@mainMenuActive}">
+        <ul>
+            <li>
+                <a id="menu-1" href="/">Dashboard</a>
+            </li>
+            <li>
+                <a id="menu-2" href="/rig">Rig</a>
+            </li>
+            <li>
+                <a id="menu-3" href="/altfolio">Altfolio</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <div class="wrapper">
+        {@base_content}
+    </div>
+</div>
+
+
+{@base_script}
+</body>
+</html>

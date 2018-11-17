@@ -1,0 +1,25 @@
+<div class="double-box">
+    <div class="box">
+        <div class="header">
+            Create New Wallet
+        </div>
+        <form autocomplete="off" action="/altfolio/wallet/create?altfolioId={@altfolioId}" class="action-form" method="post">
+            <input type="hidden" name="signature" value="{@signature}">
+            <div>
+                <label for="address">Address</label>
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" autofocus="autofocus" spellcheck="false" type="text" id="address" name="address" />
+            </div>
+            <div>
+                <label for="symbol">Currency</label>
+                <select id="symbol" name="symbol">
+                    {@symbols}
+                </select>
+            </div>
+            <div>
+                <label for="newSymbol">New Currency Symbol?</label>
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" autofocus="autofocus" spellcheck="false" type="text" id="newSymbol" name="newSymbol" />
+            </div>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+</div>

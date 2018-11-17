@@ -1,0 +1,15 @@
+<div class="double-box">
+    <div class="box">
+        <div class="header">
+            Create New Altfolio
+        </div>
+        <form autocomplete="off" action="/altfolio/edit?id={@altfolioId}" class="action-form" method="post">
+            <input type="hidden" name="signature" value="{@signature}">
+            <div>
+                <label for="name">Name</label>
+                <input autocomplete="off" autocorrect="off" autocapitalize="off" autofocus="autofocus" spellcheck="false" type="text" id="name" name="name" value="{@altfolioName}" />
+            </div>
+            <input type="submit" value="Edit">
+        </form>
+    </div>
+</div>
